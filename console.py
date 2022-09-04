@@ -13,14 +13,14 @@ from models.state import State
 from models.user import User
 import shlex # for splitting the line along spaces except in double quotes
 
-classes = {"Amenity": Amenity, "BaseModel": Basemodel, "City": City,
+classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
             "Place": Place, "Review": Review, "State": State, "User": User}
 
 
 
 class HBNBCommand(cmd.Cmd):
     """ HBNH console """
-    promt = '(hbnb)'
+    prompt = '(hbnb)'
 
     def do_EOF(self, arg):
         """Exits console"""
@@ -66,7 +66,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** class doesn't exit **")
 
-    def do_destroy(self, args):
+    def do_destroy(self, arg):
         """Deletes an instance based on the class and id"""
         args = shlex.split(arg)
         if len(args) == 0:
@@ -142,5 +142,5 @@ class HBNBCommand(cmd.Cmd):
         else:
             print("** class doesn't exist **")
 
-if _name_ == '_main_':
-    HBNBCommand().cmdlopp()
+if __name__ == '__main__':
+    HBNBCommand().cmdloop()
