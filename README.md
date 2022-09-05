@@ -18,3 +18,7 @@ The  prompt can be accessed using
 |[help](./console.py)| Prints information about specific command |
 |[quit/ EOF](./console.py)| Exit the program |
 
+# individuals having contributed to this project
+
+Beka Bekele <bekatadesse5@gmail.com>
+Nkosinathi Tolom <Casleynkosi@gmail.com>
