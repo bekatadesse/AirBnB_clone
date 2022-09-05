@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Test suite for Review class in models.review
 """
