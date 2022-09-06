@@ -32,8 +32,7 @@ class BaseModel:
 
     def __str__(self):
         """String representation of the BaseModel class"""
-        return "[{:s}] ({:s}) {}".format(self.__class__.__name__, self.id,
-                                        self._dict_)
+        return "[{:s}] ({:s}) {}".format(self.__class__.__name__, self.id, self._dict_)
     def save(self):
         """updates the attribute 'updated_at' with the current datetime"""
         self.updated_at = datetime.now()
