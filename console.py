@@ -43,13 +43,13 @@ class HBNBCommand(cmd.Cmd):
         if args[0] in classes:
             instance = classes[args[0]]()
         else:
-            print("** class doesn't exit **")
+            print("** class doesn't exist **")
             return False
         print(instance.id)
         instance.save()
 
     def do_show(self, arg):
-        """Prints an instance as astring based on the class and id"""
+        """Prints an instance as a string based on the class and id"""
         args = shlex.split(arg)
         if len(args) == 0:
             print("** class name missing **")
@@ -64,7 +64,7 @@ class HBNBCommand(cmd.Cmd):
             else: 
                 print("** instance id missing **")
         else:
-            print("** class doesn't exit **")
+            print("** class doesn't exist **")
 
     def do_destroy(self, arg):
         """Deletes an instance based on the class and id"""
@@ -102,7 +102,7 @@ class HBNBCommand(cmd.Cmd):
             print(", ".join(obj_list), end="")
             print("[")
         else:
-            print("** class doesn't exit **")
+            print("** class doesn't exist **")
 
     def do_update(self, arg):
         """Update an instance based on the class name, id, attribute & valuee"""
@@ -136,7 +136,7 @@ class HBNBCommand(cmd.Cmd):
                     else:
                         print("** attribute name missing **")
                 else:
-                    print("** np instance found **")
+                    print("** no instance found **")
             else:
                 print("** instance id missing **")
         else:
