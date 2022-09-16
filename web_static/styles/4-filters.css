@@ -1,25 +1,23 @@
-.filters {
-    background-color: white;
+section.filters{
     height: 70px;
-    width: 100%;
-    border: 1px #DDDDDD;
+    width:100%;
+    border:1px solid #DDDDDD;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
+    display:flex;
 }
 
 section.filters button{
     font-size: 18px;
+    color:#FFFFFF;
     background-color: #FF5A5F;
     height: 48px;
-    width: 20%;
+    width:20%;
+    border: 0;
     border-radius: 4px;
-    color: white;
-    border: 0px;
+    margin: auto;
     margin-right: 30px;
-    opacity: 1;
 }
 
-section.filters button:hover {
-    opacity: 0.9;
+section.filters button:hover{
+    opacity: 90%;
 }
